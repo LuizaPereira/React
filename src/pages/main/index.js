@@ -11,7 +11,6 @@ export default class Main extends Component {
     page: 1,
   };
 
-  //OnInit
   componentDidMount() {
     this.loadProducts();
   }
