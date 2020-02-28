@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
-
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 export default class Product extends Component {
   state = {
@@ -26,6 +26,9 @@ export default class Product extends Component {
         <p>
           URL: <a href="{product.url}">{product.url}</a>
         </p>
+        <Link className="product-home" to={`/`}>
+          Home
+        </Link>
       </div>
     );
   }
